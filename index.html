@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Restaurante Gourmet</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css" >
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+<nav>
+
+<h3>Bella Vista</h3>
+<img src="imagenes/logo.png" class="logo-header" >
+
+<div>
+<a href="#">Inicio</a>
+<a href="#menu">Menu</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#ubicacion">Ubicación</a>
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+    <h1>Bellavista</h1>
+<h2>Restaurante Gourmet</h2>
+
+</div>
+
+</section>
+
+<!-- CARTA PREVIEW -->
+
+<section class="section">
+
+<h2>Nuestra Carta</h2>
+
+<div class="menu-preview">
+
+<p>Descubre nuestros platos preparados con ingredientes frescos y seleccionados.</p>
+
+<br>
+
+<button class="btn" onclick="openMenu()">Abrir Carta</button>
+
+</div>
+
+</section>
+
+<!-- DESTACADOS -->
+
+
+<section class="section" id="destacados">
+
+<h2>Platos Destacados</h2>
+
+<div class="grid-platos">
+
+<div class="plato">
+<img src="imagenes/ojo-de-bife.png">
+<h3>Ojo de Bife</h3>
+<p>Corte premium con papas rústicas</p>
+</div>
+
+<div class="plato">
+<img src="imagenes/pastas-caseras.png">
+<h3>Pasta Casera</h3>
+<p>Fettuccine con salsa de crema</p>
+</div>
+
+<div class="plato">
+<img src="imagenes/tiramisu.png">
+<h3>Tiramisu</h3>
+<p>Postre italiano clásico</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALERIA -->
+
+<section class="section">
+
+<h2>Galería</h2>
+
+<div class="galeria">
+
+<img src="imagenes/frente.png">
+<img src="imagenes/descanso.png">
+<img src="imagenes/comedor.png">
+<img src="imagenes/noche-elegante.png">
+
+</div>
+
+</section>
+
+<!-- SOBRE NOSOTROS -->
+
+<section class="section"id="nosotros">
+
+<h2>Sobre Nosotros</h2>
+
+<p class="about" >
+Somos un restaurante dedicado a ofrecer una experiencia gastronómica única. 
+Cada plato es preparado con pasión, combinando sabores tradicionales con técnicas modernas.
+</p>
+
+</section>
+
+<!-- UBICACION -->
+
+<section class="section">
+
+<h2>Ubicación</h2>
+
+<div class="map-container" id="ubicacion">
+
+<iframe 
+src="https://maps.google.com/maps?q=-34.6736,-58.5606&z=15&output=embed">
+</iframe>
+
+<br><br>
+
+<a class="btn" target="_blank" href="https://www.google.com/maps/dir/?api=1&destination=-34.6736,-58.5606">
+Cómo llegar
+</a>
+
+</div>
+
+<!-- HORARIOS -->
+
+
+<section class="section">
+
+<h2>Horarios</h2>
+
+<div class="horarios">
+
+<p><strong>Lunes a Viernes</strong></p>
+<p>12:00 – 23:00</p>
+
+<br>
+
+<p><strong>Sábados</strong></p>
+<p>12:00 – 01:00</p>
+
+<br>
+
+<p><strong>Domingos</strong></p>
+<p>12:00 – 18:00</p>
+
+</div>
+
+</section>
+
+
+</section>
+
+<!-- MODAL CARTA -->
+
+<div class="modal" id="menuModal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeMenu()">&times;</span>
+
+<h2>Carta</h2>
+
+<br>
+
+<div class="menu-header">
+
+<button onclick="cambiarCategoria(-1)">❮</button>
+
+<h3 id="categoriaTitulo">Entradas</h3>
+
+<button onclick="cambiarCategoria(1)">❯</button>
+
+</div>
+
+<div id="menuContainer">
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+<a id="whatsapp" href="https://wa.me/5491164498340" target="_blank">
+<img src="imagenes/icono-whatsapp.png"> 
+</a>
+
+
+<script src="js/script.js" ></script>
+
+
+
+<footer id="contacto">
+
+<div class="footer-grid">
+
+<div>
+
+<h4>Navegación</h4>
+
+<a href="index.html">Inicio</a>
+<a href="#proyectos">Proyectos</a>
+<a href="menuQR.html">Cómo funciona</a>
+
+</div>
+
+
+<div>
+
+<h4>Nuestras redes</h4>
+
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="#">TikTok</a>
+
+</div>
+
+
+<div>
+
+<h4>Contacto</h4>
+
+<a href="mailto:alex_sam951@hotmail.com.ar">Email</a>
+
+<a href="https://wa.me/5491164498340">
+WhatsApp
+</a>
+
+</div>
+
+
+<div>
+
+<h4>Bellavista</h4>
+
+<p class="footer-paragraf">
+Bellavista es un espacio pensado para disfrutar de la buena gastronomía.
+Trabajamos con ingredientes seleccionados y recetas que combinan tradición
+y creatividad para ofrecer una experiencia única.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="footer-info">
+
+
+
+
+<div class="logo-footer">
+<img src="imagenes/logo.png" >
+</div>
+<p>
+<span class="icon">📍</span>
+Buenos Aires, Argentina
+</p>
+</div>
+<p class="footer-copy">
+© 2026 - Sayago Creaciones
+</p>
+</footer>
+</body>
+</html>
