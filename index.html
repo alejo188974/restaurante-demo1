@@ -284,8 +284,38 @@ Buenos Aires, Argentina
 </p>
 </div>
 <p class="footer-copy">
-© 2026 - Sayago Creaciones
+© 2026 - 
+    <span id="contactLink" tabindex="0">
+  Sayago Creaciones
+</span>
+
+<div id="tooltip">Pedí tu web</div>
+
+</p>
+<p id="mensaje" style="display:none; color:#25D366; font-weight:bold;" >
+  Pedí tu web
 </p>
 </footer>
+<script>
+  const link = document.getElementById("contactLink");
+  const tooltip = document.getElementById("tooltip");
+
+  link.addEventListener("mouseover", () => {
+    tooltip.style.opacity = "1";
+  });
+
+  link.addEventListener("mouseout", () => {
+    tooltip.style.opacity = "0";
+  });
+
+  link.addEventListener("mousemove", (e) => {
+    tooltip.style.left = e.clientX + 15 + "px";
+    tooltip.style.top = e.clientY + 15 + "px";
+  });
+
+  link.addEventListener("click", () => {
+    window.location.href = "mailto:alex_sam951@hotmail.com.ar?subject=Quiero%20mi%20web";
+  });
+</script>
 </body>
 </html>

@@ -369,6 +369,30 @@ padding:60px 20px 30px 20px;
 
 }
 
+
+#contactLink {
+  cursor: pointer;
+  color: #25D366; /* verde tipo WhatsApp */
+  transition: 0.3s;
+}
+
+#contactLink:hover {
+  text-decoration: underline;
+  color: #1ebe5d;
+}
+
+#tooltip {
+  position: fixed;
+  background: #25D366;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 999;
+}
 /* NUEVO MODAL */
 
 .menu-header{
